@@ -1,0 +1,5 @@
+RetlexColor	KEYWORD1
+pinRGB	KEYWORD2
+setRGB	KEYWORD2
+setColor	KEYWORD2
+setClean	KEYWORD2

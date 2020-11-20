@@ -1,5 +1,5 @@
-#ifndef _RETLEX_COLOR
-#define _RETLEX_COLOR
+#ifndef _RX_COLOR
+#define _RX_COLOR
 
 #include <Arduino.h>
 

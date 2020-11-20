@@ -1,4 +1,4 @@
-RetlexColor	KEYWORD1
+rxcolor	KEYWORD1
 pinRGB	KEYWORD2
 setRGB	KEYWORD2
 setColor	KEYWORD2

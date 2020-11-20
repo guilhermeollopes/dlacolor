@@ -1,4 +1,4 @@
-#include <RetlexColor.h>
+#include <rxcolor.h>
 
 int _pinR;
 int _pinG;
@@ -22,23 +22,20 @@ void pinRGB::setRGB(int R, int G, int B){
     analogWrite(_pinB, b);
 }
 void pinRGB::setColor(int codeColor){
-    if(codeColor == 1){
         analogWrite(_pinR, 0);
         analogWrite(_pinG, 0);
+        analogWrite(_pinB, 0);
+    
+    if(codeColor == 1){
         analogWrite(_pinB, 1023);
     }
     if(codeColor == 4){
         analogWrite(_pinR, 1023);
-        analogWrite(_pinG, 0);
-        analogWrite(_pinB, 0);
     }
     if(codeColor == 2){
-        analogWrite(_pinR, 0);
         analogWrite(_pinG, 1023);
-        analogWrite(_pinB, 0);
     }
 	if(codeColor == 3) {
-		analogWrite(_pinR, 0);
 		analogWrite(_pinG, 1023);
 		analogWrite(_pinB, 1023);
 	}
@@ -50,8 +47,8 @@ void pinRGB::setColor(int codeColor){
     if(codeColor = 6) {
         analogWrite(_pinR, 1023);
         analogWrite(_pinG, 1023);
-        analogWrite(_pinB, 0);
     }
+}
 void pinRGB::setClean(){
     analogWrite(_pinR, 0);
     analogWrite(_pinG, 0);

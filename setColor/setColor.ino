@@ -1,7 +1,7 @@
 /*  Biblioteca: rxcolor.h
  *  Criador: Retlex
  *  Data: 20 - 11 - 2020
- *  Exemplo: setRGB
+ *  Exemplo: setColor
  */
 
 #include <rxcolor.h> //Incluindo a biblioteca

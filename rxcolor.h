@@ -11,7 +11,7 @@ class pinRGB{
         void setRGB(int R, int G, int B);
         void setColor(int codeColor);
         void setClean();
-
+		void test();
 };
 
 #endif

@@ -1,7 +1,7 @@
 # Retlex Color
 ![rxcolor_github](https://user-images.githubusercontent.com/72569409/100522001-536d9000-3186-11eb-8a76-438b817a4a66.png)
 ## Para que serve?
- A biblioteca Color da Retlex, foi feita com o intuito de facilitar o uso de LED e lampadas RGB. O Retlex Color faz você ter muitas opções de ultilização do LED, sem precisar ulizar diversos comandos.
+ A biblioteca Color da Retlex, foi feita com o intuito de facilitar o uso de LED e lampadas RGB. O Retlex Color faz você ter muitas opções de ultilização do LED, sem precisar ultizar diversos comandos.
 ## Quais os métodos que posso utilizar?
  Existem alguns metodos que você pode usar, e ela vem se desenvolvendo mais e mais, para você conseguir fazer o que quiser com esta biblioteca de forma simples. Para isto veja os metodos abaixo para ultilizar a biblioteca.
 

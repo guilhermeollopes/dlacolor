@@ -20,6 +20,7 @@
  *Exemplo: led1.setClean();*
 
  * **test:** Para fazer um teste rápido para ver se os LEDS estão funcionado utilize o test, ele liga os 3 LEDS um de cada vez.
+ *Exemplo: led1.test();*
 
  ## Tabela de Cores
 

@@ -65,3 +65,22 @@ void pinRGB::test(){
 	delay(1000);
 	digitalWrite(_pinB, LOW);
 }
+void pinRGB::setStatus(bool r, bool g, bool b){
+    if(r == true) {
+        digitalWrite(_pinR, HIGH);
+    } else if(r == false) {
+        digitalWrite(_pinR, LOW);
+    }
+
+    if(g == true) {
+        digitalWrite(_pinG, HIGH);
+    } else if(g == false) {
+        digitalWrite(_pinG, LOW);
+    }
+
+    if(b == true) {
+        digitalWrite(_pinB, HIGH);
+    } else if(b == false) {
+        digitalWrite(_pinB, LOW);
+    }
+}

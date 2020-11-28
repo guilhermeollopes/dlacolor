@@ -1,7 +1,7 @@
 # Retlex Color
 ## Para que serve?
  A biblioteca Color da Retlex, foi feita com o intuito de facilitar o uso de LED e lampadas RGB. O Retlex Color faz você ter muitas opções de ultilização do LED, sem precisar ulizar diversos comandos.
-## Quais os metodos que posso ultilizar?
+## Quais os métodos que posso utilizar?
  Existem alguns metodos que você pode usar, e ela vem se desenvolvendo mais e mais, para você conseguir fazer o que quiser com esta biblioteca de forma simples. Para isto veja os metodos abaixo para ultilizar a biblioteca.
 
  * **pinRGB:** Este é o primeiro metodo que você deve ultilizar caso queira ultilizar LED ou lampadas RGB, que contenha 3 terminais. Ele serve para criar um objeto, que contenha em quais pinos os terminais RGB estão conectados. É com ele também que você irá declarar o nome deste objeto, para que você consiga ultilizalo de forma simples. Ele também já define os pinos como OUTPUT.
@@ -13,6 +13,9 @@
  * **setColor:** Com o setColor, você pode definir a cor do LED rapidamente sem precisar de codigo RGB ou de outro tipo. Basta consutar a tabela de cores (que se encontra mais abaixo), e colocar o ID da cor.
  *Exemplo: led1.setColor(2);*
  
+ * **setStatus** O setStatus, serve apenas caso você queira ligar um led em uma porta que não seja PWM, ou caso você não queira ter um controle mais detalhado como no setRGB.
+ *Exemplo: led1.setStatus(true, false, true);*
+
  * **setClean:** O setClean, faz com que o LED se apague totalmente.
  *Exemplo: led1.setClean();*
 

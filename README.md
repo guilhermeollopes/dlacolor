@@ -31,3 +31,5 @@ ID | Nome | R | G | B
 #2 | Verde | 0 | 255 | 0
 #3 | Aqua | 0 | 255 | 255
 #4 | Vermelho | 255 | 0 | 255
+#5 | Lilas | 134 | 50 | 152
+#6 | Amarelo | 255 | 255 | 0

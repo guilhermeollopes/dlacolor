@@ -1,6 +1,10 @@
 # DLA Color
 ![cplcolor_logotype](https://user-images.githubusercontent.com/72569409/102688100-29cae600-41d3-11eb-9aa1-93bd714abf41.png)
 
+![GitHub repo size](https://img.shields.io/github/repo-size/guilhermeoliveiralopes/dlacolor?color=ff6464&label=size)
+![jsDelivr hits (GitHub)](https://img.shields.io/jsdelivr/gh/hm/guilhermeoliveiralopes/dlacolor?color=6bff87&label=downloads)
+![GitHub](https://img.shields.io/github/license/guilhermeoliveiralopes/dlacolor?color=6ebdff)
+
 ## Para que serve?
  A biblioteca DLA Color, foi feita com o intuito de facilitar o uso de LED e lampadas RGB. O DLA Color faz você ter muitas opções de ultilização do LED, sem precisar ultizar diversos comandos.
 ## Quais os métodos que posso utilizar?

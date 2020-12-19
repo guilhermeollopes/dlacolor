@@ -1,5 +1,5 @@
-#ifndef _RX_COLOR
-#define _RX_COLOR
+#ifndef _DLA_COLOR
+#define _DLA_COLOR
 
 #include <Arduino.h>
 

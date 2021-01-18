@@ -12,6 +12,7 @@ class pinRGB{
         void setColor(int codeColor);
         void setClean();
 		void setStatus(bool r, bool g, bool b);
+        void setName(char name[12]);
         void test();
         
 };

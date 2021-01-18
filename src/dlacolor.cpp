@@ -44,7 +44,7 @@ void pinRGB::setColor(int codeColor){
 		analogWrite(_pinG, 204);
 		analogWrite(_pinB, 613);
 	}
-    if(codeColor = 6) {
+    if(codeColor == 6) {
         analogWrite(_pinR, 1023);
         analogWrite(_pinG, 1023);
     }
@@ -82,5 +82,12 @@ void pinRGB::setStatus(bool r, bool g, bool b){
         digitalWrite(_pinB, HIGH);
     } else if(b == false) {
         digitalWrite(_pinB, LOW);
+    }
+}
+void pinRGB::setName(char name[12]){
+    if (name[1] == "b" && name[4] == "e"){
+        digitalWrite(_pinB, HIGH);
+        digitalWrite(_pinR, LOW);
+        digitalWrite(_pinG, LOW);
     }
 }

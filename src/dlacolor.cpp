@@ -85,7 +85,10 @@ void pinRGB::setStatus(bool r, bool g, bool b){
     }
 }
 void pinRGB::setName(char name[12]){
-    if (name[1] == "b" && name[4] == "e"){
+    char l1 = name[0];
+    char l4 = name[3];
+
+    if (l1 == 'b' && l4 == 'e'){
         digitalWrite(_pinB, HIGH);
         digitalWrite(_pinR, LOW);
         digitalWrite(_pinG, LOW);

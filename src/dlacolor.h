@@ -9,7 +9,7 @@ class pinRGB{
     public:
         pinRGB(int pinR, int pinG, int pinB);
         void setRGB(int R, int G, int B);
-        void setColor(int codeColor);
+        void setCode(int codeColor);
         void setClean();
 		void setStatus(bool r, bool g, bool b);
         void setName(char name[12]);

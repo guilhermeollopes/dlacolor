@@ -21,7 +21,7 @@ void pinRGB::setRGB(int R, int G, int B){
     analogWrite(_pinG, g);
     analogWrite(_pinB, b);
 }
-void pinRGB::setColor(int codeColor){
+void pinRGB::setCode(int codeColor){
         analogWrite(_pinR, 0);
         analogWrite(_pinG, 0);
         analogWrite(_pinB, 0);
@@ -85,10 +85,7 @@ void pinRGB::setStatus(bool r, bool g, bool b){
     }
 }
 void pinRGB::setName(char name[12]){
-    char l1 = name[0];
-    char l4 = name[3];
-
-    if (l1 == 'b' && l4 == 'e'){
+    if (name[0] == 'b' && name[3] == 'e'){
         digitalWrite(_pinB, HIGH);
         digitalWrite(_pinR, LOW);
         digitalWrite(_pinG, LOW);

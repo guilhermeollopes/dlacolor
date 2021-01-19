@@ -1,7 +1,7 @@
 dlacolor	KEYWORD1
 pinRGB	KEYWORD2
 setRGB	KEYWORD2
-setColor	KEYWORD2
+setCode	KEYWORD2
 setClean	KEYWORD2
 setStatus	KEYWORD2
 test	KEYWORD2

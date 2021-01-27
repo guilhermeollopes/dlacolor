@@ -4,4 +4,5 @@ setRGB	KEYWORD2
 setCode	KEYWORD2
 setClean	KEYWORD2
 setStatus	KEYWORD2
+setName	KEYWORD2
 test	KEYWORD2

@@ -1,4 +1,4 @@
-#include <dlacolor.h>
+#include <DLAColor.h>
 
 int _pinR;
 int _pinG;

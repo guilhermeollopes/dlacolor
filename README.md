@@ -24,9 +24,9 @@
  
         led1.setName("blue");
 
- * **setCode:** Com o setColor, você pode definir a cor do LED rapidamente sem precisar de codigo RGB ou de outro tipo. Basta consutar a tabela de cores (que se encontra mais abaixo), e colocar o ID da cor. Exemplo:
+ * **setCode:** Com o setCode, você pode definir a cor do LED rapidamente sem precisar de codigo RGB ou de outro tipo. Basta consutar a tabela de cores (que se encontra mais abaixo), e colocar o ID da cor. Exemplo:
 
-        led1.setColor(2);
+        led1.setCode(2);
  
  * **setStatus:** O setStatus, serve apenas caso você queira ligar um led em uma porta que não seja PWM, ou caso você não queira ter um controle mais detalhado como no setRGB. Exemplo:
 
@@ -34,11 +34,11 @@
 
  * **setClean:** O setClean, faz com que o LED se apague totalmente. Exemplo:
 
-        led1.setClean();*
+        led1.setClean();
 
  * **test:** Para fazer um teste rápido para ver se os LEDS estão funcionado utilize o test, ele liga os 3 LEDS um de cada vez. Exemplo:
 
-        led1.test();*
+        led1.test();
 
 
  ## Tabela de Cores

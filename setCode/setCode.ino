@@ -4,14 +4,13 @@
  *  Exemplo: setCode
  */
 
-#include <dlacolor.h> //Incluindo a biblioteca
+#include <dlacolor.h> // Adição da biblioteca ao codigo
 
-pinRGB nomeLED (3, 5, 6); // Definindo nome do LED e quais são os pinos, seguido na ordem (R, G e B)
+pinRGB led1 (3, 5, 6); // Defininção os pinos em que o LED estão sendo usados na ordem RGB
 
 void setup() {
 
 }
 
 void loop() {
-  nomeLED.setCode(1); // Definindo cor pelo ID da cor já predefinido, no fim do código se encontra a lista de todas cores
-}
+  led1.setCode(1); // Escolha de cor por meio da cor do LED estabelecida com base na ViCo Database

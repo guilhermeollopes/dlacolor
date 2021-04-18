@@ -6,6 +6,7 @@
 ![GitHub](https://img.shields.io/github/license/guilhermeoliveiralopes/dlacolor?color=6ebdff)
 
 [Baixar agora!](https://github.com/guilhermeoliveiralopes/dlacolor/releases)
+
 [Versão para ESP](https://github.com/guilhermeoliveiralopes/dlespcolor/)
 
 ## Para que serve?

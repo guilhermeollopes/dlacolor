@@ -37,6 +37,9 @@ pinRGB::setName(char name[12]){
     }else if (name[0] == 'p' && name[2] == 'r' && name[5] == 'e') { //purple
         rvalue = 255;
         bvalue = 255;
+    }else if (name[0] == 'a' && name[1] == 'q' name[3] == 'a') { //aqua
+        gvalue = 255;
+        bvalue = 255;
     }
     
     int rcalculate = rname * 4;

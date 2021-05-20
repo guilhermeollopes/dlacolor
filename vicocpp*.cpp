@@ -40,6 +40,10 @@ pinRGB::setName(char name[12]){
     }else if (name[0] == 'a' && name[1] == 'q' name[3] == 'a') { //aqua
         gvalue = 255;
         bvalue = 255;
+    }else if (name[0] == 'o' && name[1] == 'f' && name[2] == 'f') { //off
+        rvalue = 0;
+        gvalue = 0;
+        bvalue = 0;
     }
     
     int rcalculate = rname * 4;
@@ -48,6 +52,4 @@ pinRGB::setName(char name[12]){
     analogWrite(_pinR, rcalculate);
     analogWrite(_pinG, gcalculate);
     analogWrite(_pinB, bcalculate);
-    //auto rename tag
-    //bookmrks
 }

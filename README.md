@@ -42,6 +42,9 @@
 
         led1.test();
 
+ ## Ultilização da paleta ViCo
+ A biblioteca DLAColor ultiliza no metodo de definicição setName, a paleta de cores ViCo (Vivid Color), que e uma paletade cores que possue cores vivas, que funcionam perfeitamente em um LED ou lampada rpg. A ultilização desta paleta ajuda evitar ter cores que não vão funcionar.
+ A paleta ViCo ultilizada nesta biblioteca, é modificada para já definir a cor do LED, dentro do proprio arquivo, por conta disto o arquivo recebe o nome ViCoM (Vivid Color Modified)
 
  ## Tabela de Cores
 

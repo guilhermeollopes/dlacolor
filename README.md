@@ -48,11 +48,13 @@
 
  ## Tabela de Cores
 
-ID | Nome | R | G | B | Inglês
+ID | Nome | R | G | B | ViCo
 :---: | :---: | :---: | :---: | :---: | :---:
-#1 | Azul | 0 | 0 | 255 | blue
-#2 | Verde | 0 | 255 | 0 | green
-#3 | Aqua | 0 | 255 | 255 | aqua
-#4 | Vermelho | 255 | 0 | 255 | ---
-#5 | Lilas | 134 | 50 | 152 | ---
-#6 | Amarelo | 255 | 255 | 0 | ---
+#0 | Black | 0 | 0 | 0 | off
+#1 | White | 255 | 255 | 255 | white
+#2 | Azul | 0 | 0 | 255 | blue
+#3 | Verde | 0 | 255 | 0 | green
+#4 | Aqua | 0 | 255 | 255 | aqua
+#5 | Vermelho | 255 | 0 | 0 | red
+#6 | Lilas | 255 | 0 | 255 | purple
+#7 | Amarelo | 255 | 255 | 0 | yellow

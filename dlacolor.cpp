@@ -25,26 +25,32 @@ void pinRGB::setCode(int codeColor){
         analogWrite(_pinR, 0);
         analogWrite(_pinG, 0);
         analogWrite(_pinB, 0);
-    
+    if(codeColor == 0){
+    }
     if(codeColor == 1){
+        analogWrite(_pinR, 1023);
+        analogWrite(_pinG, 1023);
         analogWrite(_pinB, 1023);
     }
-	if(codeColor == 2){
+    if(codeColor == 2){
+        analogWrite(_pinB, 1023);
+    }
+	if(codeColor == 3){
         analogWrite(_pinG, 1023);
     }
-	if(codeColor == 3) {
+	if(codeColor == 4) {
 		analogWrite(_pinG, 900);
 		analogWrite(_pinB, 1023);
 	}
-    if(codeColor == 4){
+    if(codeColor == 5){
         analogWrite(_pinR, 1023);
     }
-	if(codeColor == 5) {
+	if(codeColor == 6) {
 		analogWrite(_pinR, 613);
 		analogWrite(_pinG, 204);
 		analogWrite(_pinB, 613);
 	}
-    if(codeColor == 6) {
+    if(codeColor == 7) {
         analogWrite(_pinR, 1023);
         analogWrite(_pinG, 1023);
     }

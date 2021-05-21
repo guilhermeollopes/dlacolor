@@ -1,8 +1,6 @@
 #include <DLAColor.h>
 
-int _pinR;
-int _pinG;
-int _pinB;
+int _pinR, _pinG, _pinB, shine;
 
 pinRGB::pinRGB(int pinR, int pinG, int pinB) {
     _pinR = pinR;
@@ -12,38 +10,41 @@ pinRGB::pinRGB(int pinR, int pinG, int pinB) {
     pinMode(_pinG, OUTPUT);
     pinMode(_pinB, OUTPUT);
 }
+void pinRGB::shine(int shine) {
+    _shine = 100 - shine;
+}
 void pinRGB::setRGB(int R, int G, int B){
-    int r = (R*1023/255);
-    int g = (G*1023/255);
-    int b = (B*1023/255);
-
-    analogWrite(_pinR, r);
-    analogWrite(_pinG, g);
-    analogWrite(_pinB, b);
+    int rc = R*4 - _shine*10;
+    int gc = G*4 - _shine*10;
+    int bc = B*4 - _shine*10;
+    analogWrite(_pinR, rc);
+    analogWrite(_pinG, gc);
+    analogWrite(_pinB, bc);
 }
 void pinRGB::setCode(int codeColor){
-        analogWrite(_pinR, 0);
-        analogWrite(_pinG, 0);
-        analogWrite(_pinB, 0);
+    int r, g, b;
+    analogWrite(_pinR, 0);
+    analogWrite(_pinG, 0);
+    analogWrite(_pinB, 0);
     if(codeColor == 0){
     }
     if(codeColor == 1){
-        analogWrite(_pinR, 1023);
-        analogWrite(_pinG, 1023);
-        analogWrite(_pinB, 1023);
+        r = 255;
+        g = 255;
+        b = 255;
     }
     if(codeColor == 2){
-        analogWrite(_pinB, 1023);
+        b = 255;
     }
 	if(codeColor == 3){
-        analogWrite(_pinG, 1023);
+        g = 255;
     }
 	if(codeColor == 4) {
 		analogWrite(_pinG, 900);
-		analogWrite(_pinB, 1023);
+		b = 255;
 	}
     if(codeColor == 5){
-        analogWrite(_pinR, 1023);
+        r = 255;
     }
 	if(codeColor == 6) {
 		analogWrite(_pinR, 613);
@@ -51,9 +52,16 @@ void pinRGB::setCode(int codeColor){
 		analogWrite(_pinB, 613);
 	}
     if(codeColor == 7) {
-        analogWrite(_pinR, 1023);
-        analogWrite(_pinG, 1023);
+        r = 255;
+        g = 255;
     }
+    int rc = r*4 - _shine*10;
+    int gc = g*4 - _shine*10;
+    int bc = b*4 - _shine*10;
+    analogWrite(_pinR, rc);
+    analogWrite(_pinG, gc);
+    analogWrite(_pinB, bc);
+
 }
 void pinRGB::setClean(){
     analogWrite(_pinR, 0);

@@ -1,12 +1,12 @@
 {
     "name": "DLAColor",
-    "version": "0.32.0",
+    "version": "0.32.2",
     "description": "Library for easy, simple and quick use of RGB LEDs with 3 terminals.",
     "keywords": "LED, RGB, Controller",
     "repository":
     {
       "type": "git",
-      "url": "https://github.com/guilhermeoliveiralopes/dlacolor"
+      "url": "https://github.com/guilhermellopes/dlacolor"
     },
     "authors":
     [

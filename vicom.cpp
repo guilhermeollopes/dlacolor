@@ -12,7 +12,9 @@ pinRGB::pinRGB(int pinR, int pinG, int pinB) {
     pinMode(_pinG, OUTPUT);
     pinMode(_pinB, OUTPUT);
 }
-
+void pinRGB::shine(int shine) {
+    _shine = 100 - shine;
+}
 pinRGB::setName(char name[12]){
     int rvalue = 0;
     int gvalue = 0;
@@ -46,9 +48,9 @@ pinRGB::setName(char name[12]){
         bvalue = 0;
     }
     
-    int rcalculate = rname * 4;
-    int gcalculate = gname * 4;
-    int bcalculate = bname * 4;
+    int rcalculate = rname*4 - _shine*10;
+    int gcalculate = gname*4 - _shine*10;
+    int bcalculate = bname*4 - _shine*10;
     analogWrite(_pinR, rcalculate);
     analogWrite(_pinG, gcalculate);
     analogWrite(_pinB, bcalculate);

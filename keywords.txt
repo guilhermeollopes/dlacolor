@@ -6,3 +6,4 @@ setClean	KEYWORD2
 setStatus	KEYWORD2
 setName	KEYWORD2
 test	KEYWORD2
+shine   KEYWORD2

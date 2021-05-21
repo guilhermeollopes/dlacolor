@@ -14,6 +14,7 @@ class pinRGB{
 		void setStatus(bool r, bool g, bool b);
         void setName(char name[12]);
         void test();
+        void shine(int shine);
         
 };
 

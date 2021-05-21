@@ -29,7 +29,9 @@
  * **setCode:** Com o setCode, você pode definir a cor do LED rapidamente sem precisar de codigo RGB ou de outro tipo. Basta consutar a tabela de cores (que se encontra mais abaixo), e colocar o ID da cor. Exemplo:
 
         led1.setCode(2);
- 
+* **shine** O shine serve para definir o brilho do LED, o valor usando no brilho pode variar de 0 (sendo que em zero o LED fica apagado) até 100 (no cem o LED está no seu brilho maxímo). Caso o valor do brilho definido exeda o valor de 100 e seja menor do que 0, pode está havendo alterações na cor definida, ou até mesmo um erro. Exemplo:
+
+        led1.shine(100);
  * **setStatus:** O setStatus, serve apenas caso você queira ligar um led em uma porta que não seja PWM, ou caso você não queira ter um controle mais detalhado como no setRGB. Exemplo:
 
         led1.setStatus(true, false, true);

@@ -2,10 +2,9 @@
 ![cplcolor_logotype](https://user-images.githubusercontent.com/72569409/102688100-29cae600-41d3-11eb-9aa1-93bd714abf41.png)
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/guilhermeoliveiralopes/dlacolor?color=ff6464&label=size)
-![jsDelivr hits (GitHub)](https://img.shields.io/jsdelivr/gh/hm/guilhermeoliveiralopes/dlacolor?color=6bff87&label=downloads)
 ![GitHub](https://img.shields.io/github/license/guilhermeoliveiralopes/dlacolor?color=6ebdff)
 
-[Baixar agora!](https://github.com/guilhermeoliveiralopes/dlacolor/releases)
+[Baixar](https://github.com/guilhermeoliveiralopes/dlacolor/releases)
 
 [Versão para ESP](https://github.com/guilhermeoliveiralopes/dlespcolor/)
 
@@ -22,7 +21,7 @@
  
         led1.setRGB(255, 255, 255);
  
- * **setName (ainda em beta)** Como o setName você pode definir a cor do LED apenas digitando o nome da cor em inglês. Atualmente o setName ainda está em desenvolvimento, por conta disto que se tem apenas 4 cores que são: "red", "green", "blue" e "aqua". Exemplo:
+ * **setName:** Como o setName você pode definir a cor do LED apenas digitando o nome da cor em inglês. Atualmente o setName ainda está em desenvolvimento, por conta disto que se tem apenas 4 cores que são: "red", "green", "blue" e "aqua". Exemplo:
  
         led1.setName("blue");
 

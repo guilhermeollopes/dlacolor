@@ -20,11 +20,9 @@
  * **setRGB:** Com este metodo você pode definir a cor do LED, por meio do codigo RGB que vai de 0 a 255. Exemplo:
  
         led1.setRGB(255, 255, 255);
- 
  * **setName:** Como o setName você pode definir a cor do LED apenas digitando o nome da cor em inglês. Atualmente o setName ainda está em desenvolvimento, por conta disto que se tem apenas 4 cores que são: "red", "green", "blue" e "aqua". Exemplo:
  
         led1.setName("blue");
-
  * **setCode:** Com o setCode, você pode definir a cor do LED rapidamente sem precisar de codigo RGB ou de outro tipo. Basta consutar a tabela de cores (que se encontra mais abaixo), e colocar o ID da cor. Exemplo:
 
         led1.setCode(2);
@@ -59,3 +57,4 @@ ID | Nome | R | G | B | ViCo
 #5 | Vermelho | 255 | 0 | 0 | red
 #6 | Lilas | 255 | 0 | 255 | purple
 #7 | Amarelo | 255 | 255 | 0 | yellow
+#8 | Laranja | 183 | 65 | 14 | orange

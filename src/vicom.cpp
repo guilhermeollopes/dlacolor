@@ -46,6 +46,10 @@ pinRGB::setName(char name[12]){
         rvalue = 0;
         gvalue = 0;
         bvalue = 0;
+    }else if (name[0] == 'o' && name[2] == 'a' && name[5] == 'e') { //orange
+        rvalue = 183;
+        gvalue = 65;
+        bvalue = 14;
     }
     
     int rcalculate = rname*4 - _shine*10;

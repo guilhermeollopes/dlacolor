@@ -55,6 +55,11 @@ void pinRGB::setCode(int codeColor){
         r = 255;
         g = 255;
     }
+    if(codeColor == 8) {
+        r = 183;
+        g = 65;
+        b = 14;
+    }
     int rc = r*4 - _shine*10;
     int gc = g*4 - _shine*10;
     int bc = b*4 - _shine*10;

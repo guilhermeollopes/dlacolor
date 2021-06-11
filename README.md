@@ -14,8 +14,10 @@ Existem alguns métodos que você pode usar, e ela vem se desenvolvendo mais e m
        pinRGB led1 (3, 5, 6);
  
 * **setRGB:** Com este método você pode definir a cor do LED, por meio do código RGB que vai de 0 a 255. Exemplo:
+
        led1.setRGB(255, 255, 255);
 * **setName:** Como o setName você pode definir a cor do LED apenas digitando o nome da cor em inglês. Atualmente o setName ainda está em desenvolvimento, por conta disto que se tem apenas 4 cores que são: "red", "green", "blue" e "aqua". Exemplo:
+
        led1.setName("blue");
 * **setCode:** Com o setCode, você pode definir a cor do LED rapidamente sem precisar de código RGB ou de outro tipo. Basta consultar a tabela de cores (que se encontra mais abaixo), e colocar o ID da cor. É recomendável não decorar o código das cores, pois todos os códigos só serão definidos permanentemente na versão 1.0.0 da biblioteca. Exemplo:
  
@@ -26,15 +28,12 @@ Existem alguns métodos que você pode usar, e ela vem se desenvolvendo mais e m
 * **setStatus:** O setStatus, serve apenas caso você queira ligar um led em uma porta que não seja PWM, ou caso você não queira ter um controle mais detalhado como no setRGB. Exemplo:
  
        led1.setStatus(true, false, true);
- 
 * **setClean:** O setClean, faz com que o LED se apague totalmente. Exemplo:
  
        led1.setClean();
- 
 * **test:** Para fazer um teste rápido para ver se os LEDS estão funcionando, utilize o test, ele liga os 3 LEDS um de cada vez. Exemplo:
  
        led1.test();
- 
 ## Utilização da paleta ViCo
 A biblioteca DLAColor utiliza no método de definição setName, a paleta de cores ViCo (Vivid Color), que é uma paleta de cores que possuem cores vivas, que funcionam perfeitamente em um LED ou lâmpada RGB. A utilização desta paleta ajuda evitar ter cores que não vão funcionar.
 Utilizamos a paleta é modificada para-se adequar a biblioteca, desta forma já é possível definir a cor do LED, no próprio arquivo, por conta disto o arquivo recebe o nome ViCoM (Vivid Color Modified)

@@ -37,7 +37,7 @@ void pinRGB::setCode(int codeColor){
         b = 255;
     }
 	if(codeColor == 3){
-        g = 255;
+        g = 128;
     }
 	if(codeColor == 4) {
 		analogWrite(_pinG, 900);
@@ -59,6 +59,9 @@ void pinRGB::setCode(int codeColor){
         r = 183;
         g = 65;
         b = 14;
+    }
+    if(codeColor == 9) {
+        g = 255;
     }
     int rc = r*4 - _shine*10;
     int gc = g*4 - _shine*10;

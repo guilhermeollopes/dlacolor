@@ -27,8 +27,10 @@ pinRGB::setName(char name[12]){
         rvalue = 255;
 
     }else if (name[0] == 'g' && name[2] == 'e' && name[4] == 'n'){ //green
-        gvalue = 255;
+        gvalue = 128;
         
+    }else if(name[0] = 'l' && name[1] == 'i' && name[3] == 'e'){
+        gvalue = 255;
     }else if (name[0] == 'w' && name[2] == 'h' && name[4] == 'e'){ //white
         rvalue = 255;
         gvalue = 255;

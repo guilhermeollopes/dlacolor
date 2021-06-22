@@ -52,3 +52,4 @@ ID | Nome | R | G | B | ViCo
 #7 | Amarelo | 255 | 255 | 0 | yellow
 #8 | Laranja | 183 | 65 | 14 | orange
 #9 | Limão | 0 | 255 | 0 | lime
+#10 | Wine Red | 94 | 18 | 36 | winered

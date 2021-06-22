@@ -63,6 +63,11 @@ void pinRGB::setCode(int codeColor){
     if(codeColor == 9) {
         g = 255;
     }
+    if(codeColor == 10) {
+        r = 94;
+        g = 18;
+        b = 36;
+    }
     int rc = r*4 - _shine*10;
     int gc = g*4 - _shine*10;
     int bc = b*4 - _shine*10;

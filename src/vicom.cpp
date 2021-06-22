@@ -52,6 +52,12 @@ pinRGB::setName(char name[12]){
         rvalue = 183;
         gvalue = 65;
         bvalue = 14;
+    }else if(name[0] == 'w' && name[3] == 'e' && name[6] == 'd') { //winered
+        rvalue = 94;
+        gvalue = 18;
+        bvalue = 36;
+    }else {
+
     }
     
     int rcalculate = rname*4 - _shine*10;

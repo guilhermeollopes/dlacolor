@@ -26,24 +26,24 @@ void pinRGB::setCode(int codeColor){
     analogWrite(_pinR, 0);
     analogWrite(_pinG, 0);
     analogWrite(_pinB, 0);
-    if(codeColor == 0){
+    if(codeColor == 0){ //black
     }
-    if(codeColor == 1){
+    if(codeColor == 1){ //write
         r = 255;
         g = 255;
         b = 255;
     }
-    if(codeColor == 2){
+    if(codeColor == 2){ //blue
         b = 255;
     }
-	if(codeColor == 3){
+	if(codeColor == 3){ //green
         g = 128;
     }
-	if(codeColor == 4) {
+	if(codeColor == 4) { // 
 		analogWrite(_pinG, 900);
 		b = 255;
 	}
-    if(codeColor == 5){
+    if(codeColor == 5){ //red
         r = 255;
     }
 	if(codeColor == 6) {
@@ -63,10 +63,15 @@ void pinRGB::setCode(int codeColor){
     if(codeColor == 9) {
         g = 255;
     }
-    if(codeColor == 10) {
+    if(codeColor == 10) { //winered
         r = 94;
         g = 18;
         b = 36;
+    }
+    if(codeColor == 11) { //pink
+        r = 252;
+        g = 15;
+        b = 192;
     }
     int rc = r*4 - _shine*10;
     int gc = g*4 - _shine*10;

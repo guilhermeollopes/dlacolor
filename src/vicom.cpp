@@ -56,6 +56,10 @@ pinRGB::setName(char name[12]){
         rvalue = 94;
         gvalue = 18;
         bvalue = 36;
+    }else if (name[0] == 'p' && name[2] == 'n' && name[3] == 'k'){ //pink
+        rvalue = 252;
+        gvalue = 15;
+        bvalue = 192;
     }else {
 
     }

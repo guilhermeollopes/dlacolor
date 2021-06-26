@@ -6,6 +6,8 @@
  
 A biblioteca DLA Color, facilita a utilização de LEDs e lâmpadas RGB, de uma forma simples, e com sintaxe simples. Ela é uma biblioteca Open Source, criada por uma pequena comunidade de programadores de Arduino e ESP32. A biblioteca conta com diversos modos para definir a cor, atualmente há como definir através de valores RGB, ou com o código, ou nome com base na paleta de cores ViCo. A biblioteca está em desenvolvimento, para poder ter mais formas de definir a cor, mas todas as versões publicadas nas tags são versões estáveis.
  
+[Download](https://github.com/guilhermeollopes/dlacolor/releases/)
+
 ## Quais os métodos que posso utilizar?
 Existem alguns métodos que você pode usar, e ela vem se desenvolvendo mais e mais, para você conseguir fazer o que quiser com esta biblioteca de forma simples. Para isto veja os métodos abaixo para utilizar a biblioteca.
  

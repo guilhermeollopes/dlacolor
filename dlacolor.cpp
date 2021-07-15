@@ -1,6 +1,6 @@
 #include <DLAColor.h>
 
-int _pinR, _pinG, _pinB, shine;
+int _pinR, _pinG, _pinB, _shine;
 
 pinRGB::pinRGB(int pinR, int pinG, int pinB) {
     _pinR = pinR;

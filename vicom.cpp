@@ -3,6 +3,7 @@
 int _pinR;
 int _pinG;
 int _pinB;
+int _shine;
 
 pinRGB::pinRGB(int pinR, int pinG, int pinB) {
     _pinR = pinR;
@@ -15,7 +16,7 @@ pinRGB::pinRGB(int pinR, int pinG, int pinB) {
 void pinRGB::shine(int shine) {
     _shine = 100 - shine;
 }
-pinRGB::setName(char name[12]){
+void pinRGB::setName(char name[12]){
     int rvalue = 0;
     int gvalue = 0;
     int bvalue = 0;
@@ -29,7 +30,7 @@ pinRGB::setName(char name[12]){
     }else if (name[0] == 'g' && name[2] == 'e' && name[4] == 'n'){ //green
         gvalue = 128;
         
-    }else if(name[0] = 'l' && name[1] == 'i' && name[3] == 'e'){
+    }else if(name[0] == 'l' && name[1] == 'i' && name[3] == 'e'){ //lime
         gvalue = 255;
     }else if (name[0] == 'w' && name[2] == 'h' && name[4] == 'e'){ //white
         rvalue = 255;
@@ -41,7 +42,7 @@ pinRGB::setName(char name[12]){
     }else if (name[0] == 'p' && name[2] == 'r' && name[5] == 'e') { //purple
         rvalue = 255;
         bvalue = 255;
-    }else if (name[0] == 'a' && name[1] == 'q' name[3] == 'a') { //aqua
+    }else if (name[0] == 'a' && name[1] == 'q' && name[3] == 'a') { //aqua
         gvalue = 255;
         bvalue = 255;
     }else if (name[0] == 'o' && name[1] == 'f' && name[2] == 'f') { //off
@@ -64,9 +65,9 @@ pinRGB::setName(char name[12]){
 
     }
     
-    int rcalculate = rname*4 - _shine*10;
-    int gcalculate = gname*4 - _shine*10;
-    int bcalculate = bname*4 - _shine*10;
+    int rcalculate = rvalue*4 - _shine*10;
+    int gcalculate = gvalue*4 - _shine*10;
+    int bcalculate = bvalue*4 - _shine*10;
     analogWrite(_pinR, rcalculate);
     analogWrite(_pinG, gcalculate);
     analogWrite(_pinB, bcalculate);

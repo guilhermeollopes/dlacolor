@@ -11,7 +11,7 @@ A biblioteca DLA Color, facilita a utilização de LEDs e lâmpadas RGB, de uma 
 ## Como instalar?
 
 A instalação é bastante simples, você basta acessa aqui [aqui](https://github.com/guilhermeollopes/dlacolor/releases/), você será redirecionado até a pagina das releases, lá basta você escolher a versão da biblioteca (escolha sempre a mais atual).
-Após baixar, basta abrir o ArduinoIDE e ir até Sketch > Incluir Biblioteca (Include Library) > Adicionar Biblioteca .ZIP (Add .ZIP Library...). Desta forma a bibloteca já vai estar instalada, agora basta usar #import <dlacolor.h> para adicionar a biblioteca ao seu projeto.
+Após baixar, basta abrir o ArduinoIDE e ir até Sketch > Incluir Biblioteca (Include Library) > Adicionar Biblioteca .ZIP (Add .ZIP Library...). Desta forma a bibloteca já vai estar instalada, agora basta usar `#import <dlacolor.h>` para adicionar a biblioteca ao seu projeto.
 
 ## Quais os métodos que posso utilizar?
 Existem alguns métodos que você pode usar, e ela vem se desenvolvendo mais e mais, para você conseguir fazer o que quiser com esta biblioteca de forma simples. Para isto veja os métodos abaixo para utilizar a biblioteca.

@@ -4,60 +4,60 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/guilhermeoliveiralopes/dlacolor?color=ff6464&label=size)
 ![GitHub](https://img.shields.io/github/license/guilhermeoliveiralopes/dlacolor?color=6ebdff)
  
-## O que é DLAColor?
+## What is DLAColor?
 
-A biblioteca DLA Color, facilita a utilização de LEDs e lâmpadas RGB, de uma forma simples, e com sintaxe simples. Ela é uma biblioteca Open Source, criada por uma pequena comunidade de programadores de Arduino e ESP32. A biblioteca conta com diversos modos para definir a cor, atualmente há como definir através de valores RGB, ou com o código, ou nome com base na paleta de cores ViCo. A biblioteca está em desenvolvimento, para poder ter mais formas de definir a cor, mas todas as versões publicadas nas tags são versões estáveis.
+The DLA Color library facilitates the use of LEDs and RGB lamps, in a simple way, and with simple syntax. It is an Open Source library, created by a small community of Arduino and ESP32 programmers. The library has several ways to define the color, currently there is how to define it through RGB values, or with code, or name based on the ViCo color palette. The library is under development, so it can have more ways to define the color, but all versions published in tags are stable versions.
  
-## Como instalar?
+## How to install?
 
-A instalação é bastante simples, você basta acessa aqui [aqui](https://github.com/guilhermeollopes/dlacolor/releases/), você será redirecionado até a pagina das releases, lá basta você escolher a versão da biblioteca (escolha sempre a mais atual).
-Após baixar, basta abrir o ArduinoIDE e ir até Sketch > Incluir Biblioteca (Include Library) > Adicionar Biblioteca .ZIP (Add .ZIP Library...), e selecione o arquivo da baixado. Desta forma a bibloteca já vai estar instalada, agora basta usar `#import <dlacolor.h>` para adicionar a biblioteca ao seu projeto.
+Installation is very simple, you just access it [here](https://github.com/guilhermeollopes/dlacolor/releases/), you will be redirected to the releases page, there you just choose the library version (always choose the most current).
+After downloading, just open ArduinoIDE and go to Sketch > Include Library > Add .ZIP Library..., and select the downloaded file. This way the library will already be installed, now just use `#import <dlacolor.h>` to add the library to your project.
 
-## Quais os métodos que posso utilizar?
-Existem alguns métodos que você pode usar, e ela vem se desenvolvendo mais e mais, para você conseguir fazer o que quiser com esta biblioteca de forma simples. Para isto veja os métodos abaixo para utilizar a biblioteca.
+## What methods can I use?
+There are a few methods you can use, and it's been developing more and more, so you can do whatever you want with this library in a simple way. For this see the methods below to use the library.
  
-* **pinRGB:** Este é o primeiro método que você deve utilizar caso queira utilizar LED ou lâmpadas RGB, que contenha 3 terminais. Ele serve para criar um objeto, que contenha em quais pinos os terminais RGB estão conectados. É com ele também que você irá declarar o nome deste objeto, para que você consiga utilizá-lo de forma simples. Ele também já define os pinos como OUTPUT. Exemplo:
+* **pinRGB:** This is the first method you should use if you want to use LED or RGB lamps, which contain 3 terminals. It serves to create an object, which contains which pins the RGB terminals are connected to. It is also with it that you will declare the name of this object, so that you can use it in a simple way. It also already defines the pins as OUTPUT. Example:
  
        pinRGB led1 (3, 5, 6);
  
-* **setRGB:** Com este método você pode definir a cor do LED, por meio do código RGB que vai de 0 a 255. Exemplo:
+* **setRGB:** With this method you can define the LED color, through the RGB code that goes from 0 to 255. Example:
 
        led1.setRGB(255, 255, 255);
-* **setName:** Como o setName você pode definir a cor do LED apenas digitando o nome da cor em inglês. Atualmente o setName ainda está em desenvolvimento, por conta disto que se tem apenas 4 cores que são: "red", "green", "blue" e "aqua". Exemplo:
+* **setName:** Like setName you can set the LED color just by typing the color name in English. Currently setName is still under development, because of this that there are only 4 colors: "red", "green", "blue" and "aqua". Example:
 
        led1.setName("blue");
-* **setCode:** Com o setCode, você pode definir a cor do LED rapidamente sem precisar de código RGB ou de outro tipo. Basta consultar a tabela de cores (que se encontra mais abaixo), e colocar o ID da cor. É recomendável não decorar o código das cores, pois todos os códigos só serão definidos permanentemente na versão 1.0.0 da biblioteca. Exemplo:
+* **setCode:** With setCode, you can set the LED color quickly without needing RGB or other code. Just consult the color table (found below), and enter the color ID. It is recommended not to memorize the color coding, as all codes will only be permanently defined in version 1.0.0 of the library. Example:
  
        led1.setCode(2);
-* **shine** O shine serve para definir o brilho do LED, o valor usando no brilho pode variar de 0 (sendo que em zero o LED fica apagado) até 100 (em cem o LED está no seu brilho máximo). Caso o valor do brilho definido exceda o valor de 100 e seja menor do que 0, pode estar havendo alterações na cor definida, ou até mesmo um erro. Exemplo:
+* **shine** The shine serves to define the LED brightness, the value used in the brightness can vary from 0 (in zero the LED is off) to 100 (in 100 the LED is at its maximum brightness). If the defined brightness value exceeds the value of 100 and is less than 0, there may be changes in the defined color, or even an error. Example:
  
        led1.shine(100);
-* **setStatus:** O setStatus, serve apenas caso você queira ligar um led em uma porta que não seja PWM, ou caso você não queira ter um controle mais detalhado como no setRGB. Exemplo:
+* **setStatus:** The setStatus is only useful if you want to connect a led to a port other than PWM, or if you don't want to have a more detailed control like setRGB. Example:
  
        led1.setStatus(true, false, true);
-* **setClean:** O setClean, faz com que o LED se apague totalmente. Exemplo:
+* **setClean:** setClean, makes the LED go out completely. Example:
  
        led1.setClean();
-* **test:** Para fazer um teste rápido para ver se os LEDS estão funcionando, utilize o test, ele liga os 3 LEDS um de cada vez. Exemplo:
+* **test:** To do a quick test to see if the LEDs are working, use the test, it turns on the 3 LEDs one at a time. Example:
  
        led1.test();
-## Utilização da paleta ViCo
-A biblioteca DLAColor utiliza no método de definição setName, a paleta de cores ViCo (Vivid Color), que é uma paleta de cores que possuem cores vivas, que funcionam perfeitamente em um LED ou lâmpada RGB. A utilização desta paleta ajuda evitar ter cores que não vão funcionar.
-Utilizamos a paleta é modificada para-se adequar a biblioteca, desta forma já é possível definir a cor do LED, no próprio arquivo, por conta disto o arquivo recebe o nome ViCoM (Vivid Color Modified)
+## Using the ViCo palette
+The DLAColor library uses in the setName definition method, the ViCo color palette (Vivid Color), which is a palette of colors that have vivid colors, which work perfectly in an LED or RGB lamp. Using this palette helps to avoid having colors that won't work.
+We use the palette is modified to suit the library, this way it is already possible to define the color of the LED, in the file itself, because of this the file is named ViCoM (Vivid Color Modified).
  
-## Tabela de Cores
+## Color Table
  
 ID | Nome | R | G | B | ViCo
 :---: | :---: | :---: | :---: | :---: | :---:
 #0 | Black | 0 | 0 | 0 | off
 #1 | White | 255 | 255 | 255 | white
-#2 | Azul | 0 | 0 | 255 | blue
-#3 | Verde | 0 | 128 | 0 | green
+#2 | Blue | 0 | 0 | 255 | blue
+#3 | Green | 0 | 128 | 0 | green
 #4 | Aqua | 0 | 255 | 255 | aqua
-#5 | Vermelho | 255 | 0 | 0 | red
-#6 | Lilás | 255 | 0 | 255 | purple
-#7 | Amarelo | 255 | 255 | 0 | yellow
-#8 | Laranja | 183 | 65 | 14 | orange
-#9 | Limão | 0 | 255 | 0 | lime
+#5 | Red | 255 | 0 | 0 | red
+#6 | Lilac | 255 | 0 | 255 | purple
+#7 | Yellow | 255 | 255 | 0 | yellow
+#8 | Orange | 183 | 65 | 14 | orange
+#9 | Lime | 0 | 255 | 0 | lime
 #10 | Wine Red | 94 | 18 | 36 | winered
 #11 | Pink | 252 | 15 | 192 |pink

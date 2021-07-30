@@ -18,7 +18,7 @@ There are a few methods you can use, and it's been developing more and more, so 
  
 * **pinRGB:** This is the first method you should use if you want to use LED or RGB lamps, which contain 3 terminals. It serves to create an object, which contains which pins the RGB terminals are connected to. It is also with it that you will declare the name of this object, so that you can use it in a simple way. It also already defines the pins as OUTPUT. Example:
  
-       pinRGB led1 (3, 5, 6);
+       pinRGB.led1 (3, 5, 6);
  
 * **setRGB:** With this method you can define the LED color, through the RGB code that goes from 0 to 255. Example:
 

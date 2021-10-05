@@ -50,7 +50,7 @@ Utilizamos a paleta é modificada para-se adequar a biblioteca, desta forma já 
 ID | Nome | R | G | B | ViCo
 :---: | :---: | :---: | :---: | :---: | :---:
 #0 | Black | 0 | 0 | 0 | off
-#1 | White | 255 | 255 | 255 | white
+#1 | White | 255 | 255 | 255 | on
 #2 | Azul | 0 | 0 | 255 | blue
 #3 | Verde | 0 | 128 | 0 | green
 #4 | Aqua | 0 | 255 | 255 | aqua

@@ -50,7 +50,7 @@ We use the palette is modified to suit the library, this way it is already possi
 ID | Nome | R | G | B | ViCo
 :---: | :---: | :---: | :---: | :---: | :---:
 #0 | Black | 0 | 0 | 0 | off
-#1 | White | 255 | 255 | 255 | white
+#1 | White | 255 | 255 | 255 | on
 #2 | Blue | 0 | 0 | 255 | blue
 #3 | Green | 0 | 128 | 0 | green
 #4 | Aqua | 0 | 255 | 255 | aqua

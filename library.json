@@ -1,23 +1,23 @@
 {
     "name": "DLAColor",
-    "version": "0.34.0",
+    "version": "1.0.0",
     "description": "Library for easy, simple and quick use of RGB LEDs with 3 terminals.",
     "keywords": "LED, RGB, Controller",
     "repository":
     {
       "type": "git",
-      "url": "https://github.com/guilhermellopes/dlacolor"
+      "url": "https://github.com/guilhermeollopes/dlacolor"
     },
     "authors":
     [
       {
-        "name": "Glumily",
-        "email": "contact.glumily@gmail.com",
-        "url": "http://glumily.rf.gd/"
+        "name": "Guilherme Lopes",
+        "email": "guilhermeollopes@hotmail.com",
+        "url": "http://guilhermeollopes.github.io/social"
       }
     ],
     "license": "MIT",
-    "homepage": "http://glumily.rf.gd/",
+    "homepage": "github.com/guilhermeollopes/dlacolor",
     "dependencies": {
 
     },

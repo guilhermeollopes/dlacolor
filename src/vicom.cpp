@@ -32,7 +32,7 @@ void pinRGB::setName(char name[12]){
         
     }else if(name[0] == 'l' && name[1] == 'i' && name[3] == 'e'){ //lime
         gvalue = 255;
-    }else if (name[0] == 'w' && name[2] == 'h' && name[4] == 'e'){ //white
+    }else if (name[0] == 'o' && name[1] == 'n'){ //on
         rvalue = 255;
         gvalue = 255;
         bvalue = 255;

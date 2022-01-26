@@ -2,7 +2,7 @@
 
 int _pinR, _pinG, _pinB, _shine;
 
-pinRGB::pinRGB(int pinR, int pinG, int pinB) {
+pinrgb::pinrgb(int pinR, int pinG, int pinB) {
     _pinR = pinR;
     _pinG = pinG;
     _pinB = pinB;
@@ -10,10 +10,10 @@ pinRGB::pinRGB(int pinR, int pinG, int pinB) {
     pinMode(_pinG, OUTPUT);
     pinMode(_pinB, OUTPUT);
 }
-void pinRGB::shine(int shine) {
+void pinrgb::shine(int shine) {
     _shine = 100 - shine;
 }
-void pinRGB::setRGB(int R, int G, int B){
+void pinrgb::setrgb(int R, int G, int B){
     int rc = R*4 - _shine*10;
     int gc = G*4 - _shine*10;
     int bc = B*4 - _shine*10;
@@ -21,7 +21,7 @@ void pinRGB::setRGB(int R, int G, int B){
     analogWrite(_pinG, gc);
     analogWrite(_pinB, bc);
 }
-void pinRGB::setCode(int codeColor){
+void pinrgb::setcode(int codeColor){
     int r, g, b;
     analogWrite(_pinR, 0);
     analogWrite(_pinG, 0);
@@ -81,12 +81,12 @@ void pinRGB::setCode(int codeColor){
     analogWrite(_pinB, bc);
 
 }
-void pinRGB::setClean(){
+void pinrgb::setclean(){
     analogWrite(_pinR, 0);
     analogWrite(_pinG, 0);
     analogWrite(_pinB, 0);
 }
-void pinRGB::test(){
+void pinrgb::teste(){
 	digitalWrite(_pinR, HIGH);
 	delay(1000);
 	digitalWrite(_pinR, LOW);
@@ -97,7 +97,7 @@ void pinRGB::test(){
 	delay(1000);
 	digitalWrite(_pinB, LOW);
 }
-void pinRGB::setStatus(bool r, bool g, bool b){
+void pinrgb::setstatus(bool r, bool g, bool b){
     if(r == true) {
         digitalWrite(_pinR, HIGH);
     } else if(r == false) {

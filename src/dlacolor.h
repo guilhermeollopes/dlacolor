@@ -3,17 +3,17 @@
 
 #include <Arduino.h>
 
-class pinRGB{
+class pinrgb{
     private:
 
     public:
-        pinRGB(int pinR, int pinG, int pinB);
-        void setRGB(int R, int G, int B);
-        void setCode(int codeColor);
-        void setClean();
-		void setStatus(bool r, bool g, bool b);
-        void setName(char name[12]);
-        void test();
+        pinrgb(int pinR, int pinG, int pinB);
+        void setrgb(int R, int G, int B);
+        void setcode(int codeColor);
+        void setclean();
+		void setstatus(bool r, bool g, bool b);
+        void setname(char name[12]);
+        void teste();
         void shine(int shine);
         
 };

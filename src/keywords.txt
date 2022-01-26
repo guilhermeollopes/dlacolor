@@ -1,9 +1,9 @@
 DLAColor	KEYWORD1
-pinRGB	KEYWORD2
-setRGB	KEYWORD2
-setCode	KEYWORD2
-setClean	KEYWORD2
-setStatus	KEYWORD2
-setName	KEYWORD2
-test	KEYWORD2
+pinrgb	KEYWORD2
+setrgb	KEYWORD2
+setcode	KEYWORD2
+setclean	KEYWORD2
+setstatus	KEYWORD2
+setname	KEYWORD2
+teste	KEYWORD2
 shine   KEYWORD2

@@ -3,6 +3,8 @@
  
 ![GitHub repo size](https://img.shields.io/github/repo-size/guilhermeoliveiralopes/dlacolor?color=ff6464&label=size)
 ![GitHub](https://img.shields.io/github/license/guilhermeoliveiralopes/dlacolor?color=6ebdff)
+
+⚠️ ATTENTION: Due to a delay in the update, the ViCo color system has not yet been updated.
  
 ## What is DLAColor?
 

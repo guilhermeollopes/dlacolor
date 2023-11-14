@@ -1,6 +1,6 @@
 /*  Library: dlacolor.h
  *  Creator: Guilherme Lopes
- *  Date: 20 - 11 - 2020
+ *  Date: 14 - 11 - 2023
  *  Update: 14 - 10 - 2021
  *  Example: setcode
  */

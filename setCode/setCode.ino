@@ -15,3 +15,4 @@ void setup() {
 
 void loop() {
   led1.setcode(1); // Set the blue color through the ViCo color list
+}
